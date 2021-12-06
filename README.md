@@ -1,7 +1,7 @@
-# Healthier Food Choices
+# Nudging Towards Healthier Food Choices - Automated Message Delivery System
 
 ## Introduction
-The script utilises chromedriver, selenium, and python to automate the process of messaging participants at pre-determined timings. This way, participants may receive messages and pictures according to the various phase according to the phase they are in. From the `names.txt` file, a list of participant IDs tagged by the Day is fed into the program, As the study progresses, the Days increases, the participant ID is updated and stored in a `names_next.txt` file. The cycle completes until the participant exits the cycle of the study or drops off from the study.
+The script utilises `ChromeDriver`, `Selenium`, and `Python` to automate the process of messaging participants at pre-determined timings. This way, participants may receive messages and pictures according to the various phase according to the phase they are in. From the `names.txt` file, a list of participant IDs tagged by the Day is fed into the program. As the study progresses, the Days increases, the participant ID is updated and stored in a `names_next.txt` file. The cycle continues until the participant completes the study or drops off from the study.
 
 ## Pre-requisite
 1. Chrome Browser (Check the version of your chrome browser)
@@ -11,7 +11,7 @@ The script utilises chromedriver, selenium, and python to automate the process o
 ## How to Use
 1. Clone this github repository into the local computer.
 2. Prepare your participant list with the ones included in the [Excel spreadsheet](./Participant_List.xlsx) (Note: the participant id need to be stored as the names and should be able to be found in the Whatsapp mobile application).
-3. Copy the Participants' ID and tag from Column F of the [Excel spreadsheet](./Participant_List.xlsx) into the names.txt.
+3. Copy the Participants' ID and tag from Column F of the [Excel spreadsheet](./Participant_List.xlsx) into the `names.txt`.
 4. Create a virtual environment with Python3 `python3 -m venv ./venv; source ./venv/bin/activate; pip install --upgrade pip; pip install -r requirements.txt`
 5. Run the following command `nohup python main.py &`
 6. Log in to the Whatsapp Web Browser with your mobile, and the program will send the messages and images at the preset time, which could be set in [main.py Line 192](./main.py)
