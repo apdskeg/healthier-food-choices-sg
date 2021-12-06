@@ -14,7 +14,7 @@ The script utilises chromedriver, selenium, and python to automate the process o
 3. Copy the Participants' ID and tag from Column F of the [Excel spreadsheet](./Participant_List.xlsx) into the names.txt.
 4. Create a virtual environment with Python3 `python3 -m venv ./venv; source ./venv/bin/activate; pip install --upgrade pip; pip install -r requirements.txt`
 5. Run the following command `nohup python main.py &`
-6. Log in to the Whatsapp Web Browser with your mobile, and the program will send the messages and images at the preset time, which could be set in [main.py Line 202](./main.py)
+6. Log in to the Whatsapp Web Browser with your mobile, and the program will send the messages and images at the preset time, which could be set in [main.py Line 192](./main.py)
 6. The logs can be monitored via `timelogger.txt`, which is updated on a regular basis.
 
 ## References
