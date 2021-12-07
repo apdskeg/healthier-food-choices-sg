@@ -33,3 +33,5 @@ venv*
 known-issues.md
 *.docx
 Messages*
+*.xlsx
+*master.zip
